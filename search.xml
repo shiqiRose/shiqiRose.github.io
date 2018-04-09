@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[first_blog]]></title>
+    <title><![CDATA[hexo d无反应]]></title>
     <url>%2F2018%2F04%2F08%2Fhexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94%2F</url>
     <content type="text"><![CDATA[hexo d 无反应 在环境部署到最后一步遇到了这个问题来分享下： title: xxxx //网站标题 author: xxx //作者名字 language: zh-Hans //网站使用的语言 中文 主要是站点配置文件_config.yml如下代码原因：冒号后面有个空格~1234deploy: type: git repo: https://github.com/username/username.github.io.git branch: master]]></content>
       <categories>
