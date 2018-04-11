@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>十七日食记</title>
+    <link>https://github.com/shiqiRose/shiqiRose.github.io/</link>
+    <atom:link href="/shiqiRose.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>这似乎有点奇怪,并不知道说什么,大概就是填坑日记吧~</description>
+    <pubDate>Tue, 10 Apr 2018 15:02:25 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>win快捷键进cmd</title>
+      <link>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/10/win%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd/</link>
+      <guid>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/10/win%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd/</guid>
+      <pubDate>Tue, 10 Apr 2018 14:47:48 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;前言&lt;br&gt;是不是用惯了命令行觉得来回找太麻烦！？&lt;br&gt;来来来get新技能（吐槽一下这个命令太长我记不住的）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;第一步&lt;/strong&gt; ：开始→所有程序→附件→命令提示符→右键
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<blockquote><p>前言<br>是不是用惯了命令行觉得来回找太麻烦！？<br>来来来get新技能（吐槽一下这个命令太长我记不住的）</p></blockquote><ul><li><strong>第一步</strong> ：开始→所有程序→附件→命令提示符→右键选择以管理员运行(或者执行身份)→OK</li><li><strong>第二步</strong> ：在win+R(也就是运行)中输入： runas /user:administrator Cmd 然后回车，会提示你输入密码，输入后即可以管理员身份启动CMD</li><li><strong>PS</strong> ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理。<br>也可以直接打开CMD输入  runas /user:administrator Cmd  然后回车<br>此法有2个前提：<br>1.administrator需要设置密码<br>2.secondLogon…服务需开启</li></ul>]]></content:encoded>
+      
+      <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/10/win%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>hexo d无反应</title>
+      <link>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/08/hexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94/</link>
+      <guid>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/08/hexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94/</guid>
+      <pubDate>Sun, 08 Apr 2018 15:00:05 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;hexo-d-无反应&quot;&gt;&lt;a href=&quot;#hexo-d-无反应&quot; class=&quot;headerlink&quot; title=&quot;hexo d 无反应&quot;&gt;&lt;/a&gt;hexo d 无反应&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;在环境部署到最后一步遇到了这个问题来分享下：&lt;/p&gt;
+&lt;block
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="hexo-d-无反应"><a href="#hexo-d-无反应" class="headerlink" title="hexo d 无反应"></a>hexo d 无反应</h1><hr><p>在环境部署到最后一步遇到了这个问题来分享下：</p><blockquote><ul><li>title: xxxx    //网站标题</li><li>author: xxx   //作者名字</li><li>language: zh-Hans    //网站使用的语言 中文 </li></ul></blockquote><p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p><h3 id="主要是站点配置文件-config-yml如下代码原因：冒号后面有个空格"><a href="#主要是站点配置文件-config-yml如下代码原因：冒号后面有个空格" class="headerlink" title="主要是站点配置文件_config.yml如下代码原因：冒号后面有个空格~"></a>主要是站点配置文件_config.yml如下代码原因：冒号后面有个空格~</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">   type: git  </span><br><span class="line">   repo: https://github.com/username/username.github.io.git</span><br><span class="line">   branch: master</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/08/hexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/07/hello-world/</link>
+      <guid>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/07/hello-world/</guid>
+      <pubDate>Sat, 07 Apr 2018 14:31:56 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content:encoded>
+      
+      <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/07/hello-world/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
