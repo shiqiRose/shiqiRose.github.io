@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[win快捷键进cmd]]></title>
-    <url>%2F2018%2F04%2F10%2Fwin%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd%2F</url>
+    <url>%2FshiqiRose%2F2018%2F04%2F10%2Fwin%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd%2F</url>
     <content type="text"><![CDATA[前言是不是用惯了命令行觉得来回找太麻烦！？来来来get新技能（吐槽一下这个命令太长我记不住的） 第一步 ：开始→所有程序→附件→命令提示符→右键选择以管理员运行(或者执行身份)→OK 第二步 ：在win+R(也就是运行)中输入： runas /user:administrator Cmd 然后回车，会提示你输入密码，输入后即可以管理员身份启动CMD PS ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理。也可以直接打开CMD输入 runas /user:administrator Cmd 然后回车此法有2个前提：1.administrator需要设置密码2.secondLogon…服务需开启]]></content>
       <categories>
         <category>Windows</category>
@@ -13,7 +13,7 @@
   </entry>
   <entry>
     <title><![CDATA[hexo d无反应]]></title>
-    <url>%2F2018%2F04%2F08%2Fhexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94%2F</url>
+    <url>%2FshiqiRose%2F2018%2F04%2F08%2Fhexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94%2F</url>
     <content type="text"><![CDATA[hexo d 无反应 在环境部署到最后一步遇到了这个问题来分享下： title: xxxx //网站标题 author: xxx //作者名字 language: zh-Hans //网站使用的语言 中文 主要是站点配置文件_config.yml如下代码原因：冒号后面有个空格~1234deploy: type: git repo: https://github.com/username/username.github.io.git branch: master]]></content>
       <categories>
         <category>Hexo</category>
@@ -24,7 +24,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F04%2F07%2Fhello-world%2F</url>
+    <url>%2FshiqiRose%2F2018%2F04%2F07%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
