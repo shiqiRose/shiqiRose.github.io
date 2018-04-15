@@ -8,7 +8,7 @@
     <atom:link href="/shiqiRose.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>这似乎有点奇怪,并不知道说什么,大概就是填坑日记吧~</description>
-    <pubDate>Tue, 10 Apr 2018 15:02:25 GMT</pubDate>
+    <pubDate>Sun, 15 Apr 2018 03:28:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -29,7 +29,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<blockquote><p>前言<br>是不是用惯了命令行觉得来回找太麻烦！？<br>来来来get新技能（吐槽一下这个命令太长我记不住的）</p></blockquote><ul><li><strong>第一步</strong> ：开始→所有程序→附件→命令提示符→右键选择以管理员运行(或者执行身份)→OK</li><li><strong>第二步</strong> ：在win+R(也就是运行)中输入： runas /user:administrator Cmd 然后回车，会提示你输入密码，输入后即可以管理员身份启动CMD</li><li><strong>PS</strong> ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理。<br>也可以直接打开CMD输入  runas /user:administrator Cmd  然后回车<br>此法有2个前提：<br>1.administrator需要设置密码<br>2.secondLogon…服务需开启</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>前言<br>是不是用惯了命令行觉得来回找太麻烦！？<br>来来来get新技能（吐槽一下这个命令太长我记不住的）</p></blockquote><ul><li><strong>第一步</strong> ：开始→所有程序→附件→命令提示符→右键选择以管理员运行(或者执行身份)→OK</li><li><strong>第二步</strong> ：在win+R(也就是运行)中输入： runas /user:administrator Cmd 然后回车，会提示你输入密码，输入后即可以管理员身份启动CMD</li><li><strong>PS</strong> ：也可以直接打开CMD输入  runas /user:administrator Cmd  然后回车<br>此法有2个前提：<br>1.administrator需要设置密码<br>2.secondLogon…服务需开启</li></ul>]]></content:encoded>
       
       <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/10/win%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd/#disqus_thread</comments>
     </item>
