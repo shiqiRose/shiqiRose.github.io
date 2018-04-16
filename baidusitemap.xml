@@ -4,20 +4,17 @@
 
     
   <url>
-    <loc>https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/2018/04/16/nginx%E6%B7%BB%E5%8A%A0ssl/</loc>
-    <lastmod>2018-04-16T14:04:43.194Z</lastmod>
+    <loc>https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/2018/04/07/hello-world/</loc>
+    <lastmod>2018-04-16T14:19:09.714Z</lastmod>
     <data>
         <display>
-        <title>nginx添加ssl</title>
-        <pubTime>2018-04-16T13:46:02.000Z</pubTime>
+        <title>Hello World</title>
+        <pubTime>2018-04-07T14:31:56.938Z</pubTime>
         
-        <tag>Nginx</tag>
+        <tag>helloWorld</tag>
          
          
            
-             
-              <breadCrumb title="Nginx" url="https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/categories/Nginx/"/>
-          
         </display>
     </data>
     </url>
@@ -25,7 +22,7 @@
     
   <url>
     <loc>https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/2018/04/10/win%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd/</loc>
-    <lastmod>2018-04-15T03:28:15.982Z</lastmod>
+    <lastmod>2018-04-16T14:17:15.240Z</lastmod>
     <data>
         <display>
         <title>win快捷键进cmd</title>
@@ -33,10 +30,34 @@
         
         <tag>Windows</tag>
          
+        <tag>Cmd</tag>
+         
          
            
              
               <breadCrumb title="Windows" url="https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/categories/Windows/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/2018/04/16/nginx%E6%B7%BB%E5%8A%A0ssl/</loc>
+    <lastmod>2018-04-16T14:15:33.496Z</lastmod>
+    <data>
+        <display>
+        <title>nginx添加ssl</title>
+        <pubTime>2018-04-16T13:46:02.000Z</pubTime>
+        
+        <tag>Nginx</tag>
+         
+        <tag>ssl</tag>
+         
+         
+           
+             
+              <breadCrumb title="Nginx" url="https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/categories/Nginx/"/>
           
         </display>
     </data>
@@ -80,19 +101,4 @@
     
     
     
-    
-  <url>
-    <loc>https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/2018/04/07/hello-world/</loc>
-    <lastmod>2018-04-07T14:31:56.938Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2018-04-07T14:31:56.938Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>
