@@ -8,8 +8,20 @@
     <atom:link href="/shiqiRose.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>这似乎有点奇怪,并不知道说什么,大概就是填坑日记吧~</description>
-    <pubDate>Sun, 15 Apr 2018 03:28:15 GMT</pubDate>
+    <pubDate>Mon, 16 Apr 2018 13:46:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>nginx添加ssl</title>
+      <link>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/16/nginx%E6%B7%BB%E5%8A%A0ssl/</link>
+      <guid>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/16/nginx%E6%B7%BB%E5%8A%A0ssl/</guid>
+      <pubDate>Mon, 16 Apr 2018 13:46:02 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/16/nginx%E6%B7%BB%E5%8A%A0ssl/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>win快捷键进cmd</title>
