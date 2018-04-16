@@ -3,7 +3,13 @@
   <entry>
     <title><![CDATA[nginx添加ssl]]></title>
     <url>%2FshiqiRose.github.io%2F2018%2F04%2F16%2Fnginx%E6%B7%BB%E5%8A%A0ssl%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[nginx 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。 123456789/usr/local/nginx/sbin/nginx -V #查看nginx安装模块cd /usr/local/nginx-1.12.2./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module makemv /usr/local/nginx/sbin/nginx /usr/local/nginx/sbin/nginx.oldcp objs/nginx /usr/local/nginx/sbin/nginxmake upgrade //替换老的nginx进程再次执行：/usr/local/nginx/sbin/nginx -V 将会显示新的nginx的版本及编译的参数。 nginx设置开机自启动12345如果你采用编译安装的方式，直接在/etc/rc.local 增加如下代码即可：/usr/local/nginx/sbin/nginx 前提是你的nginx是安装到/usr/local/nginx 下另外，如果使用yum 安装的话，默认是作为服务器，开机自动启动的。可以用chkconfig 查看]]></content>
+      <categories>
+        <category>Nginx</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[win快捷键进cmd]]></title>
