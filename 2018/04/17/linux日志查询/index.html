@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="十七日食记">
 <meta property="og:description" content="懒得介绍了，emmm,如题所述Linux日志筛选命令 。 (1)Linux目录操作命令 cd ..退出当前目录，返回上一级目录；cd / 退出当前目录，返回根目录；   mkdir命令用于创建一个新的目录；rmdir命令功能删除指定的空目录。  (2)Linux筛选日志tail用法 tail  -n  10  test.log   查询日志尾部最后10行的日志;   tail -n +10 tes">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-17T13:10:28.238Z">
+<meta property="og:updated_time" content="2018-04-17T13:12:18.238Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux日志筛选命令">
 <meta name="twitter:description" content="懒得介绍了，emmm,如题所述Linux日志筛选命令 。 (1)Linux目录操作命令 cd ..退出当前目录，返回上一级目录；cd / 退出当前目录，返回根目录；   mkdir命令用于创建一个新的目录；rmdir命令功能删除指定的空目录。  (2)Linux筛选日志tail用法 tail  -n  10  test.log   查询日志尾部最后10行的日志;   tail -n +10 tes">
@@ -344,7 +344,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-17T21:10:28+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-17T21:12:18+08:00">
                 2018-04-17
               </time>
             
@@ -511,20 +511,31 @@ grep -C 100 --color &apos;TooManyResultsException&apos; catalina.log.2017-09-25 
 <p>查询日志特殊场景：</p>
 </blockquote>
 <blockquote>
-<p>如果日志非常的多，在短短的一个小时的时间中就有上千条或者上万条数据，仅仅根据条件筛选的话非常麻烦，即使筛选出来也会有很多条数据。如果我们知道该条调用发生的时间，就可以根据日志最前面打印的时间判断出哪些记录符合查询条件。所以，我们可以根据日志的日期作为搜索条件，并且配合grep使用，如下所示：<br><code>`</code><br>sed -n ‘/2017-03-08 15:42:03/,/2017-03-08 15:42:05/p’ dubbo-access-consumer.2017-03-08.log | grep countOrgOrder</p>
+<p>如果日志非常的多，在短短的一个小时的时间中就有上千条或者上万条数据，仅仅根据条件筛选的话非常麻烦，即使筛选出来也会有很多条数据。如果我们知道该条调用发生的时间，就可以根据日志最前面打印的时间判断出哪些记录符合查询条件。所以，我们可以根据日志的日期作为搜索条件，并且配合grep使用，如下所示：</p>
 </blockquote>
-<pre><code>&gt; 我们可以使用sed命令的查询模式：
-
-</code></pre><p>使用模式进行查询<br>     [root@localhost ruby] # sed -n ‘/ruby/p’ ab    #查询包括关键字ruby所在所有行<br>     [root@localhost ruby] # sed -n ‘/\$/p’ ab        #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义</p>
-<p>查询.bz2类型的日志文件，如下所示：bzgrep 60000000005137 dubbo-access-provider.2017-05-17.log.bz2</p>
 <pre><code>
-&gt; 下面介绍一下如何查询筛选服务器上运行的进程：
+sed -n &apos;/2017-03-08 15:42:03/,/2017-03-08 15:42:05/p&apos; dubbo-access-consumer.2017-03-08.log | grep countOrgOrder
 
-</code></pre><p>1.使用ps命令执行相应操作，如果想查询服务器上所有运行的进程的话，可以使用命令ps aux即可查出；</p>
-<p>2.如果有具体的筛选条件的话，就可以使用ps aux | grep xxx即可；</p>
-<p>3.或者使用命令 ps -ef | grep xxx 也可以完成相应的筛选工作；</p>
-<p>4.终止某个进程的命令 kill -9 XXXXX     XXXXX为上述查出的序号  如： 19979线程终止为： kill -9 19979<br><code>`</code> </p>
-<blockquote>
+</code></pre><blockquote>
+<p>我们可以使用sed命令的查询模式：</p>
+</blockquote>
+<pre><code>使用模式进行查询
+     [root@localhost ruby] # sed -n &apos;/ruby/p&apos; ab    #查询包括关键字ruby所在所有行
+     [root@localhost ruby] # sed -n &apos;/\$/p&apos; ab        #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
+
+查询.bz2类型的日志文件，如下所示：bzgrep 60000000005137 dubbo-access-provider.2017-05-17.log.bz2
+
+</code></pre><blockquote>
+<p>下面介绍一下如何查询筛选服务器上运行的进程：</p>
+</blockquote>
+<pre><code>1.使用ps命令执行相应操作，如果想查询服务器上所有运行的进程的话，可以使用命令ps aux即可查出；
+
+2.如果有具体的筛选条件的话，就可以使用ps aux | grep xxx即可；
+
+3.或者使用命令 ps -ef | grep xxx 也可以完成相应的筛选工作；
+
+4.终止某个进程的命令 kill -9 XXXXX     XXXXX为上述查出的序号  如： 19979线程终止为： kill -9 19979
+</code></pre><blockquote>
 <p>以上内容摘抄整理自互联网，如有侵权，请联系本人~</p>
 </blockquote>
 
