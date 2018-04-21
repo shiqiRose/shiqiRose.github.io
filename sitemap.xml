@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://github.com/shiqiRose/shiqiRose.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-04-21T09:57:10.614Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/07/hello-world/</loc>
     
     <lastmod>2018-04-21T09:49:21.943Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/08/hexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94/</loc>
     
     <lastmod>2018-04-21T09:40:18.493Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://github.com/shiqiRose/shiqiRose.github.io/categories/index.html</loc>
-    
-    <lastmod>2018-04-21T09:25:36.280Z</lastmod>
     
   </url>
   
