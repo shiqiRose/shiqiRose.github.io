@@ -90,7 +90,8 @@
 <meta property="og:description" content="很久之前做的小练习，现在准备复习一下，顺便整理一下，做个记录  JS省市联动12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;JS 省市联动&amp;lt;/ti">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://p77dwd1qb.bkt.clouddn.com/images/js省市联动.png">
-<meta property="og:updated_time" content="2018-04-22T13:07:31.962Z">
+<meta property="og:image" content="http://p77dwd1qb.bkt.clouddn.com/images/js省市联动1.png">
+<meta property="og:updated_time" content="2018-04-22T13:13:52.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS省市联动">
 <meta name="twitter:description" content="很久之前做的小练习，现在准备复习一下，顺便整理一下，做个记录  JS省市联动12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;JS 省市联动&amp;lt;/ti">
@@ -346,7 +347,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-22T21:07:31+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-22T21:13:52+08:00">
                 2018-04-22
               </time>
             
@@ -411,7 +412,8 @@
 <p>很久之前做的小练习，现在准备复习一下，顺便整理一下，做个记录</p>
 </blockquote>
 <h4 id="JS省市联动"><a href="#JS省市联动" class="headerlink" title="JS省市联动"></a>JS省市联动</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;JS 省市联动&lt;/title&gt;</span><br><span class="line"> &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line"> </span><br><span class="line">     function init()&#123;</span><br><span class="line">    </span><br><span class="line">      var  province=[&quot;1101|北京&quot;,&quot;1002|河北省&quot;,&quot;1003|河南省&quot;];</span><br><span class="line">	  var  provinceObj=document.getElementById(&quot;province&quot;);</span><br><span class="line">	  provinceObj.options[0]=new Option(&quot;--请选择--&quot;);</span><br><span class="line">	  </span><br><span class="line">	  for(var i=0;i&lt; province.length;i++)&#123;</span><br><span class="line">	     var items =  province[i].split(&quot;|&quot;);</span><br><span class="line">		 var value=items[0];</span><br><span class="line">         var text=items[1];</span><br><span class="line">         var option=new Option(text,value);		</span><br><span class="line">         provinceObj.options[i+1] =option;		 </span><br><span class="line">	   &#125;</span><br><span class="line">    &#125;</span><br><span class="line">	</span><br><span class="line">	function chooseProvince()&#123;</span><br><span class="line">	   var city=document.getElementById(&quot;city&quot;);</span><br><span class="line">       city.options.length=0;</span><br><span class="line">	   city.options[0]=new Option(&quot;--请选择--&quot;);</span><br><span class="line">	   var citys=[&quot;北京&quot;,&quot;石家庄|唐山|邯郸|天津|秦皇岛|廊坊&quot;,&quot;郑州|开封|洛阳|南阳&quot;];</span><br><span class="line">	   var index=document.getElementById(&quot;province&quot;).selectedIndex;</span><br><span class="line">	   if(index!=0)&#123;</span><br><span class="line">	       var items=citys[index-1].split(&quot;|&quot;);</span><br><span class="line">		   for(var i=0;i&lt;items.length;i++)&#123;</span><br><span class="line">		      var option=new Option(items[i]);</span><br><span class="line">		      city.options[i+1]=option;</span><br><span class="line">		   &#125;</span><br><span class="line">	      </span><br><span class="line">	   &#125;else&#123;&#125;</span><br><span class="line">	&#125;</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body onload=&quot;init()&quot;&gt;</span><br><span class="line"> </span><br><span class="line">  &lt;select id=&quot;province&quot;  onchange=&quot;chooseProvince()&quot;&gt;</span><br><span class="line">     &lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">  &lt;/select&gt; </span><br><span class="line">  &lt;select id=&quot;city&quot;&gt;</span><br><span class="line">     &lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">  &lt;/select&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<img src="http://p77dwd1qb.bkt.clouddn.com/images/js省市联动.png">
+<h4 id="如下图所示"><a href="#如下图所示" class="headerlink" title="如下图所示"></a>如下图所示</h4><img src="http://p77dwd1qb.bkt.clouddn.com/images/js省市联动.png">
+<img src="http://p77dwd1qb.bkt.clouddn.com/images/js省市联动1.png">
       
     </div>
     
@@ -699,7 +701,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#JS省市联动"><span class="nav-number">1.</span> <span class="nav-text">JS省市联动</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#JS省市联动"><span class="nav-number">1.</span> <span class="nav-text">JS省市联动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如下图所示"><span class="nav-number">2.</span> <span class="nav-text">如下图所示</span></a></li></ol></div>
             
 
           </div>
