@@ -8,8 +8,30 @@
     <atom:link href="/shiqiRose.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>这似乎有点奇怪,并不知道说什么,大概就是填坑日记吧~</description>
-    <pubDate>Sat, 21 Apr 2018 13:59:14 GMT</pubDate>
+    <pubDate>Sun, 22 Apr 2018 12:51:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>JS省市联动</title>
+      <link>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/22/js%E7%9C%81%E5%B8%82%E8%81%94%E5%8A%A8/</link>
+      <guid>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/22/js%E7%9C%81%E5%B8%82%E8%81%94%E5%8A%A8/</guid>
+      <pubDate>Sun, 22 Apr 2018 12:51:34 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;很久之前做的小练习，现在准备复习一下，顺便整理一下，做个记录&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;JS省市联动&quot;&gt;&lt;a href=&quot;#JS省市联动&quot; class=&quot;headerlink&quot; title=&quot;JS省市联动&quot;&gt;&lt;/a&gt;JS省
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<blockquote><p>很久之前做的小练习，现在准备复习一下，顺便整理一下，做个记录</p></blockquote><h4 id="JS省市联动"><a href="#JS省市联动" class="headerlink" title="JS省市联动"></a>JS省市联动</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;JS 省市联动&lt;/title&gt;</span><br><span class="line"> &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line"> </span><br><span class="line">     function init()&#123;</span><br><span class="line">    </span><br><span class="line">      var  province=[&quot;1101|北京&quot;,&quot;1002|河北省&quot;,&quot;1003|河南省&quot;];</span><br><span class="line">  var  provinceObj=document.getElementById(&quot;province&quot;);</span><br><span class="line">  provinceObj.options[0]=new Option(&quot;--请选择--&quot;);</span><br><span class="line">  </span><br><span class="line">  for(var i=0;i&lt; province.length;i++)&#123;</span><br><span class="line">     var items =  province[i].split(&quot;|&quot;);</span><br><span class="line"> var value=items[0];</span><br><span class="line">         var text=items[1];</span><br><span class="line">         var option=new Option(text,value);</span><br><span class="line">         provinceObj.options[i+1] =option; </span><br><span class="line">   &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">function chooseProvince()&#123;</span><br><span class="line">   var city=document.getElementById(&quot;city&quot;);</span><br><span class="line">       city.options.length=0;</span><br><span class="line">   city.options[0]=new Option(&quot;--请选择--&quot;);</span><br><span class="line">   var citys=[&quot;北京&quot;,&quot;石家庄|唐山|邯郸|天津|秦皇岛|廊坊&quot;,&quot;郑州|开封|洛阳|南阳&quot;];</span><br><span class="line">   var index=document.getElementById(&quot;province&quot;).selectedIndex;</span><br><span class="line">   if(index!=0)&#123;</span><br><span class="line">       var items=citys[index-1].split(&quot;|&quot;);</span><br><span class="line">   for(var i=0;i&lt;items.length;i++)&#123;</span><br><span class="line">      var option=new Option(items[i]);</span><br><span class="line">      city.options[i+1]=option;</span><br><span class="line">   &#125;</span><br><span class="line">      </span><br><span class="line">   &#125;else&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body onload=&quot;init()&quot;&gt;</span><br><span class="line"> </span><br><span class="line">  &lt;select id=&quot;province&quot;  onchange=&quot;chooseProvince()&quot;&gt;</span><br><span class="line">     &lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">  &lt;/select&gt; </span><br><span class="line">  &lt;select id=&quot;city&quot;&gt;</span><br><span class="line">     &lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt;</span><br><span class="line">  &lt;/select&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><img src="http://p77dwd1qb.bkt.clouddn.com/images/js省市联动.png">]]></content:encoded>
+      
+      <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/22/js%E7%9C%81%E5%B8%82%E8%81%94%E5%8A%A8/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>linux查看系统最大的十个文件</title>
@@ -91,27 +113,6 @@
       <content:encoded><![CDATA[<blockquote><p>前言<br>是不是用惯了命令行觉得来回找太麻烦！？<br>来来来get新技能（吐槽一下这个命令太长我记不住的）</p></blockquote><ul><li><strong>第一步</strong> ：开始→所有程序→附件→命令提示符→右键选择以管理员运行(或者执行身份)→OK</li><li><strong>第二步</strong> ：在win+R(也就是运行)中输入： runas /user:administrator Cmd 然后回车，会提示你输入密码，输入后即可以管理员身份启动CMD</li><li><strong>PS</strong> ：也可以直接打开CMD输入  runas /user:administrator Cmd  然后回车<br>此法有2个前提：<br>1.administrator需要设置密码<br>2.secondLogon…服务需开启</li></ul>]]></content:encoded>
       
       <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/10/win%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>hexo d无反应</title>
-      <link>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/08/hexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94/</link>
-      <guid>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/08/hexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94/</guid>
-      <pubDate>Sun, 08 Apr 2018 15:00:05 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;h1 id=&quot;hexo-d-无反应&quot;&gt;&lt;a href=&quot;#hexo-d-无反应&quot; class=&quot;headerlink&quot; title=&quot;hexo d 无反应&quot;&gt;&lt;/a&gt;hexo d 无反应&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;在环境部署到最后一步遇到了这个问题来分享下：&lt;/p&gt;
-&lt;block
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h1 id="hexo-d-无反应"><a href="#hexo-d-无反应" class="headerlink" title="hexo d 无反应"></a>hexo d 无反应</h1><hr><p>在环境部署到最后一步遇到了这个问题来分享下：</p><blockquote><ul><li>title: xxxx    //网站标题</li><li>author: xxx   //作者名字</li><li>language: zh-Hans    //网站使用的语言 中文 </li></ul></blockquote><p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p><h3 id="主要是站点配置文件-config-yml如下代码原因：冒号后面有个空格"><a href="#主要是站点配置文件-config-yml如下代码原因：冒号后面有个空格" class="headerlink" title="主要是站点配置文件_config.yml如下代码原因：冒号后面有个空格~"></a>主要是站点配置文件_config.yml如下代码原因：冒号后面有个空格~</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">   type: git  </span><br><span class="line">   repo: https://github.com/username/username.github.io.git</span><br><span class="line">   branch: master</span><br></pre></td></tr></table></figure>]]></content:encoded>
-      
-      <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/08/hexo%20d%E6%97%A0%E5%8F%8D%E5%BA%94/#disqus_thread</comments>
     </item>
     
   </channel>
