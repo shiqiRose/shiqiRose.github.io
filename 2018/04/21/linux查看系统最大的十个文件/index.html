@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="linux查看系统最大的十个文件">
+<meta name="description" content="linux查看系统最大的十个文件，虽然这一串命令我自己组合不起来，感谢神奇的度娘~">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux查看系统最大的十个文件">
 <meta property="og:url" content="https://github.com/shiqiRose/shiqiRose.github.io/2018/04/21/linux查看系统最大的十个文件/index.html">
 <meta property="og:site_name" content="十七日食记">
-<meta property="og:description" content="linux查看系统最大的十个文件">
+<meta property="og:description" content="linux查看系统最大的十个文件，虽然这一串命令我自己组合不起来，感谢神奇的度娘~">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-29T11:35:14.948Z">
+<meta property="og:updated_time" content="2018-04-29T13:58:11.577Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux查看系统最大的十个文件">
-<meta name="twitter:description" content="linux查看系统最大的十个文件">
+<meta name="twitter:description" content="linux查看系统最大的十个文件，虽然这一串命令我自己组合不起来，感谢神奇的度娘~">
 
 
 
@@ -344,7 +344,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-29T19:35:14+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-29T21:58:11+08:00">
                 2018-04-29
               </time>
             
@@ -406,7 +406,7 @@
 
       
         <blockquote>
-<p>linux查看系统最大的十个文件</p>
+<p>linux查看系统最大的十个文件，虽然这一串命令我自己组合不起来，感谢神奇的度娘~</p>
 </blockquote>
 <a id="more"></a>
 <h5 id="第一种方式"><a href="#第一种方式" class="headerlink" title="第一种方式"></a>第一种方式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">find / -type f -print0 | xargs -0 du -h | sort -rh | head -n 10</span><br><span class="line">详细解释</span><br><span class="line">find：在目录结构中搜索文件的命令</span><br><span class="line">/：在整个系统（从根目录开始）中查找</span><br><span class="line">-type：指定文件类型</span><br><span class="line">f：普通文件</span><br><span class="line">-print0：在标准输出显示完整的文件名，其后跟一个空字符（null）</span><br><span class="line">|：控制操作符，将一条命令的输出传递给下一个命令以供进一步处理</span><br><span class="line">xargs：将标准输入转换成命令行参数的命令</span><br><span class="line">-0：以空字符（null）而不是空白字符（LCTT 译者注：即空格、制表符和换行）来分割记录</span><br><span class="line">du -h：以可读格式计算磁盘空间使用情况的命令</span><br><span class="line">sort：对文本文件进行排序的命令</span><br><span class="line">-r：反转结果</span><br><span class="line">-h：用可读格式打印输出</span><br><span class="line">head：输出文件开头部分的命令</span><br><span class="line">n -10：打印前 10 个文件</span><br></pre></td></tr></table></figure>
@@ -587,7 +587,7 @@
               
                 <a href="/shiqiRose.github.io/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -756,7 +756,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">5.9k</span>
+    <span title="Site words total count">6.4k</span>
   
 </div>
 
