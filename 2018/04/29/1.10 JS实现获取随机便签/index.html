@@ -81,18 +81,22 @@
 
 
 
-<meta name="description" content="嗯整理之前的小练习~  JavaScript中字符串常用方法&amp;lt;!DOCTYPE html&amp;gt;       JavaScript中字符串常用方法       //字符串常用方法   var str_0=”abcdfdsf”;   //(1)连接字符串 concat(“”,….)   str_0=str_0+”sdfdfdaf”;   var res= str_0.concat(“a”,”">
+<meta name="description" content="1.10 JS实现获取随机便签  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091&amp;lt;!DOCT">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS字符串常用方法">
-<meta property="og:url" content="https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/JavaScript中字符串常用方法/index.html">
+<meta property="og:title" content="JS定时器的设置">
+<meta property="og:url" content="https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/1.10 JS实现获取随机便签/index.html">
 <meta property="og:site_name" content="十七日食记">
-<meta property="og:description" content="嗯整理之前的小练习~  JavaScript中字符串常用方法&amp;lt;!DOCTYPE html&amp;gt;       JavaScript中字符串常用方法       //字符串常用方法   var str_0=”abcdfdsf”;   //(1)连接字符串 concat(“”,….)   str_0=str_0+”sdfdfdaf”;   var res= str_0.concat(“a”,”">
+<meta property="og:description" content="1.10 JS实现获取随机便签  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091&amp;lt;!DOCT">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-29T07:19:54.565Z">
+<meta property="og:image" content="http://p77dwd1qb.bkt.clouddn.com/js%E4%BE%BF%E7%AD%BE1.png">
+<meta property="og:image" content="http://p77dwd1qb.bkt.clouddn.com/js%E4%BE%BF%E7%AD%BE2.png">
+<meta property="og:image" content="http://p77dwd1qb.bkt.clouddn.com/%E7%B4%A0%E6%9D%90%E5%A6%82%E4%B8%8B.png">
+<meta property="og:updated_time" content="2018-04-29T08:54:18.217Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS字符串常用方法">
-<meta name="twitter:description" content="嗯整理之前的小练习~  JavaScript中字符串常用方法&amp;lt;!DOCTYPE html&amp;gt;       JavaScript中字符串常用方法       //字符串常用方法   var str_0=”abcdfdsf”;   //(1)连接字符串 concat(“”,….)   str_0=str_0+”sdfdfdaf”;   var res= str_0.concat(“a”,”">
+<meta name="twitter:title" content="JS定时器的设置">
+<meta name="twitter:description" content="1.10 JS实现获取随机便签  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091&amp;lt;!DOCT">
+<meta name="twitter:image" content="http://p77dwd1qb.bkt.clouddn.com/js%E4%BE%BF%E7%AD%BE1.png">
 
 
 
@@ -122,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/JavaScript中字符串常用方法/"/>
+  <link rel="canonical" href="https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/1.10 JS实现获取随机便签/"/>
 
 
 
 
 
-  <title>JS字符串常用方法 | 十七日食记</title>
+  <title>JS定时器的设置 | 十七日食记</title>
   
 
 
@@ -299,7 +303,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/2018/04/29/JavaScript中字符串常用方法/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/shiqiRose/shiqiRose.github.io/shiqiRose.github.io/2018/04/29/1.10 JS实现获取随机便签/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="是"十七"呀">
@@ -316,7 +320,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JS字符串常用方法</h1>
+          <h1 class="post-title" itemprop="name headline">JS定时器的设置</h1>
         
 
         <div class="post-meta">
@@ -328,7 +332,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-29T15:20:28+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-29T18:20:43+08:00">
                 2018-04-29
               </time>
             
@@ -344,7 +348,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-29T15:19:54+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-29T16:54:18+08:00">
                 2018-04-29
               </time>
             
@@ -406,10 +410,13 @@
 
       
         <blockquote>
-<p>嗯整理之前的小练习~</p>
+<p>1.10 JS实现获取随机便签</p>
 </blockquote>
-<h4 id="JavaScript中字符串常用方法"><a href="#JavaScript中字符串常用方法" class="headerlink" title="JavaScript中字符串常用方法"></a>JavaScript中字符串常用方法</h4><p>&lt;!DOCTYPE html&gt;</p>
-<html><br>  <head><br>    <title>JavaScript中字符串常用方法</title><br>    <script type="text/javascript"><br><br>   //字符串常用方法<br>   var str_0=”abcdfdsf”;<br>   //(1)连接字符串 concat(“”,….)<br>   str_0=str_0+”sdfdfdaf”;<br>   var res= str_0.concat(“a”,”b”,”c”);//不定个数参数<br>   //(2)获取长度length<br>   var l=str_0.length;<br>   //(3)大小写  toUpperCase()  toLowerCase()<br>   var c=str_0.toUpperCase();<br>   //(4)没有trim方法， substring  substr<br>   var c_0=str_0.substring(0,4);//从x开始截取，到y结束，不包含y下标位置<br>   var c_1=str_0.substr(2,4);//从x开始，截取几个长度<br>   //(5) split(“”) 按照子字符串拆分数组<br>   var items_0=”adf:ddd:ss:dddds”.split(“:”);<br>   for(var i=0;i&lt;items_0.length;i++){<br>      document.write(items_0[i]+”<br>“);<br>   }<br>    //(6) indexOf()  lastIndexOf();<br>    var index=str_0.indexOf(“d”,4);<br>    //(7)replace()只替换第一次出现的，后面学正则可以替换所有的指定字符<br>    var str_n=str_0.replace(“a”,”AAA”);<br>    alert(str_n);//警告框<br>    </script><br><br>  </head><br>  <body><br><br>  </body><br></html>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt; </span><br><span class="line">	&lt;title&gt;这个网页的标题&lt;/title&gt;	</span><br><span class="line">	 &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	   body&#123;padding:0px;margin:0px;background-image:url(&quot;image/bg.gif&quot;);padding:40px;&#125;</span><br><span class="line">	   #wall&#123;width:960px;height:700px;background-image:url(&quot;image/content_bg.jpg&quot;);</span><br><span class="line">	   margin:0 auto;position:relative;&#125;</span><br><span class="line">	   </span><br><span class="line">	   .pag&#123;position:absolute;cursor:pointer;/*设置光标样式*/&#125;</span><br><span class="line">	   .top&#123;width:187px;height:28px;background-image:url(&quot;image/tip1_h.gif&quot;);padding-top:40px;</span><br><span class="line">	   font-size:14px;padding-left:20px;padding-right:20px;&#125;</span><br><span class="line">	   .center&#123;width:187px;height:80px;background-image:url(&quot;image/tip1_c.gif&quot;);</span><br><span class="line">	    padding-top:20px;font-size:13px;</span><br><span class="line">	     padding-left:20px;padding-right:20px;</span><br><span class="line">	   &#125;</span><br><span class="line">	   .bottom&#123;width:227px;height:73px;background-image:url(&quot;image/tip1_f.gif&quot;);color:#c0f;font-size:14px;</span><br><span class="line">	      </span><br><span class="line">	   &#125;</span><br><span class="line">	   .bottom_1&#123;display:block;float:left;height:height:32px;width:32px;&#125;</span><br><span class="line">	   .bottom_2&#123;display:block;float:right;height:22px;padding-top:10px;padding-right:40px;&#125;</span><br><span class="line">	 &lt;/style&gt;</span><br><span class="line">	  &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	     var index;</span><br><span class="line">	     function init()&#123;</span><br><span class="line">		   var  pag=document.getElementById(&quot;pag&quot;);//找到便签</span><br><span class="line">		   var wall =document.getElementById(&quot;wall&quot;);//墙</span><br><span class="line">		   for(var i=0;i&lt;10;i++)&#123;//克隆10个便签</span><br><span class="line">		   </span><br><span class="line">		     index=i;</span><br><span class="line">		     var newPag=pag.cloneNode(true);//克隆某个节点元素</span><br><span class="line">			 //随机生成横坐标left</span><br><span class="line">			 var leftVal=Math.random()*700;</span><br><span class="line">			 var topVal=Math.random()*400;</span><br><span class="line">			 </span><br><span class="line">			 newPag.style.top=topVal+&quot;px&quot;;</span><br><span class="line">			  newPag.style.left=leftVal+&quot;px&quot;;</span><br><span class="line">			 //随机生成纵坐标rith</span><br><span class="line">		     wall.appendChild(newPag);</span><br><span class="line">		     </span><br><span class="line">			 </span><br><span class="line">			 //点击每个便签</span><br><span class="line">			 newPag.onclick= fn;</span><br><span class="line">			 pag.onclick=fn;</span><br><span class="line">		   &#125;</span><br><span class="line">		 </span><br><span class="line">		 &#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		function fn()&#123;</span><br><span class="line">		  this.style.zIndex=index;</span><br><span class="line">		  index++;</span><br><span class="line">		</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		//关闭便签</span><br><span class="line">		function closePag(obj)&#123;</span><br><span class="line">		  obj.parentNode.parentNode.style.display=&quot;none&quot;;</span><br><span class="line">		&#125;</span><br><span class="line">	  &lt;/script&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">   &lt;body onload=&quot;init()&quot;&gt;</span><br><span class="line">        &lt;div id=&quot;wall&quot;&gt;</span><br><span class="line">		   &lt;div class=&quot;pag&quot; id=&quot;pag&quot;&gt;</span><br><span class="line">		      &lt;div class=&quot;top&quot;&gt;</span><br><span class="line">			    &lt;span&gt;</span><br><span class="line">				 第[1001]条，</span><br><span class="line">				 2017-08-19</span><br><span class="line">				&lt;/span&gt;&lt;span onclick=&quot;closePag(this)&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;×&lt;/span&gt;</span><br><span class="line">			  &lt;/div&gt;</span><br><span class="line">			  &lt;div class=&quot;center&quot;&gt;</span><br><span class="line">			    你要相信，你百分百的努力！</span><br><span class="line">			    的确不如别人，</span><br><span class="line">			    百分之一的随随便便成功~</span><br><span class="line">			  &lt;/div&gt;</span><br><span class="line">			  &lt;div class=&quot;bottom&quot;&gt;</span><br><span class="line">			   &lt;span class=&quot;bottom_1&quot;&gt;</span><br><span class="line">			     &lt;image src=&quot;image/bpic_1.gif&quot;  &gt;</span><br><span class="line">			   &lt;/span&gt;</span><br><span class="line">			   &lt;span class=&quot;bottom_2&quot;&gt;</span><br><span class="line">			     木子兮，留言</span><br><span class="line">			   &lt;/span&gt;</span><br><span class="line">			  &lt;/div&gt;</span><br><span class="line">		   </span><br><span class="line">		   &lt;div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	   </span><br><span class="line">	    </span><br><span class="line">      </span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="如图所示效果如下"><a href="#如图所示效果如下" class="headerlink" title="如图所示效果如下"></a>如图所示效果如下</h4><p><img src="http://p77dwd1qb.bkt.clouddn.com/js%E4%BE%BF%E7%AD%BE1.png" alt="image"></p>
+<p><img src="http://p77dwd1qb.bkt.clouddn.com/js%E4%BE%BF%E7%AD%BE2.png" alt="image"></p>
+<h5 id="所用到的素材如下，这篇文章在github上面有同步（素材放在那里咯-）"><a href="#所用到的素材如下，这篇文章在github上面有同步（素材放在那里咯-）" class="headerlink" title="所用到的素材如下，这篇文章在github上面有同步（素材放在那里咯~）"></a>所用到的素材如下，这篇文章在github上面有同步（素材放在那里咯~）</h5><p><img src="http://p77dwd1qb.bkt.clouddn.com/%E7%B4%A0%E6%9D%90%E5%A6%82%E4%B8%8B.png" alt="image"></p>
+
       
     </div>
     
@@ -443,11 +450,11 @@
         
         <li class="post-copyright-link">
           <strong>本文链接：</strong>
-          <a href="https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/JavaScript中字符串常用方法/" title="JS字符串常用方法">https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/JavaScript中字符串常用方法/</a>
+          <a href="https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/1.10 JS实现获取随机便签/" title="JS定时器的设置">https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/1.10 JS实现获取随机便签/</a>
         </li>
 
         <li class="post-copyright-date">
-            <strong>发布时间：</strong>2018年4月29日 - 15时04分
+            <strong>发布时间：</strong>2018年4月29日 - 18时04分
         </li>  
 
         <li class="post-copyright-license">
@@ -486,8 +493,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/shiqiRose.github.io/2018/04/22/js省市联动/" rel="next" title="JS省市联动">
-                <i class="fa fa-chevron-left"></i> JS省市联动
+              <a href="/shiqiRose.github.io/2018/04/29/1.8 JS获取某个元素节点/" rel="next" title="JS获取某个元素节点">
+                <i class="fa fa-chevron-left"></i> JS获取某个元素节点
               </a>
             
           </div>
@@ -495,10 +502,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/shiqiRose.github.io/2018/04/29/1.3 JS数组/" rel="prev" title="JS数组">
-                JS数组 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -701,7 +704,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#JavaScript中字符串常用方法"><span class="nav-number">1.</span> <span class="nav-text">JavaScript中字符串常用方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#如图所示效果如下"><span class="nav-number">1.</span> <span class="nav-text">如图所示效果如下</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#所用到的素材如下，这篇文章在github上面有同步（素材放在那里咯-）"><span class="nav-number">1.1.</span> <span class="nav-text">所用到的素材如下，这篇文章在github上面有同步（素材放在那里咯~）</span></a></li></ol></li></ol></div>
             
 
           </div>

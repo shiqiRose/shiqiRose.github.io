@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JS定时器的设置]]></title>
+    <url>%2FshiqiRose.github.io%2F2018%2F04%2F29%2F1.10%20JS%E5%AE%9E%E7%8E%B0%E8%8E%B7%E5%8F%96%E9%9A%8F%E6%9C%BA%E4%BE%BF%E7%AD%BE%2F</url>
+    <content type="text"><![CDATA[1.10 JS实现获取随机便签 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;title&gt;这个网页的标题&lt;/title&gt; &lt;style type=&quot;text/css&quot;&gt; body&#123;padding:0px;margin:0px;background-image:url(&quot;image/bg.gif&quot;);padding:40px;&#125; #wall&#123;width:960px;height:700px;background-image:url(&quot;image/content_bg.jpg&quot;); margin:0 auto;position:relative;&#125; .pag&#123;position:absolute;cursor:pointer;/*设置光标样式*/&#125; .top&#123;width:187px;height:28px;background-image:url(&quot;image/tip1_h.gif&quot;);padding-top:40px; font-size:14px;padding-left:20px;padding-right:20px;&#125; .center&#123;width:187px;height:80px;background-image:url(&quot;image/tip1_c.gif&quot;); padding-top:20px;font-size:13px; padding-left:20px;padding-right:20px; &#125; .bottom&#123;width:227px;height:73px;background-image:url(&quot;image/tip1_f.gif&quot;);color:#c0f;font-size:14px; &#125; .bottom_1&#123;display:block;float:left;height:height:32px;width:32px;&#125; .bottom_2&#123;display:block;float:right;height:22px;padding-top:10px;padding-right:40px;&#125; &lt;/style&gt; &lt;script type=&quot;text/javascript&quot;&gt; var index; function init()&#123; var pag=document.getElementById(&quot;pag&quot;);//找到便签 var wall =document.getElementById(&quot;wall&quot;);//墙 for(var i=0;i&lt;10;i++)&#123;//克隆10个便签 index=i; var newPag=pag.cloneNode(true);//克隆某个节点元素 //随机生成横坐标left var leftVal=Math.random()*700; var topVal=Math.random()*400; newPag.style.top=topVal+&quot;px&quot;; newPag.style.left=leftVal+&quot;px&quot;; //随机生成纵坐标rith wall.appendChild(newPag); //点击每个便签 newPag.onclick= fn; pag.onclick=fn; &#125; &#125; function fn()&#123; this.style.zIndex=index; index++; &#125; //关闭便签 function closePag(obj)&#123; obj.parentNode.parentNode.style.display=&quot;none&quot;; &#125; &lt;/script&gt; &lt;/head&gt; &lt;body onload=&quot;init()&quot;&gt; &lt;div id=&quot;wall&quot;&gt; &lt;div class=&quot;pag&quot; id=&quot;pag&quot;&gt; &lt;div class=&quot;top&quot;&gt; &lt;span&gt; 第[1001]条， 2017-08-19 &lt;/span&gt;&lt;span onclick=&quot;closePag(this)&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;×&lt;/span&gt; &lt;/div&gt; &lt;div class=&quot;center&quot;&gt; 你要相信，你百分百的努力！ 的确不如别人， 百分之一的随随便便成功~ &lt;/div&gt; &lt;div class=&quot;bottom&quot;&gt; &lt;span class=&quot;bottom_1&quot;&gt; &lt;image src=&quot;image/bpic_1.gif&quot; &gt; &lt;/span&gt; &lt;span class=&quot;bottom_2&quot;&gt; 木子兮，留言 &lt;/span&gt; &lt;/div&gt; &lt;div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt; 如图所示效果如下 所用到的素材如下，这篇文章在github上面有同步（素材放在那里咯~）]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JS定时器的设置]]></title>
+    <url>%2FshiqiRose.github.io%2F2018%2F04%2F29%2F1.9%20JS%E5%AE%9A%E6%97%B6%E5%99%A8%E7%9A%84%E8%AE%BE%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[JS定时器的设置 1234567891011121314151617181920212223242526272829303132333435&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;title&gt;JS定时器设置&lt;/title&gt; &lt;style type=&quot;text/css&quot;&gt; div&#123;width:100px;height:100px;background-color:red;position:relative; &#125; &lt;/style&gt; &lt;script type=&quot;text/javascript&quot;&gt; var time; function run()&#123; var div=document.getElementById(&quot;main&quot;); //使用定时器 time= setInterval(function()&#123; /* div.style.left=div.offsetLeft+10+&quot;px&quot;; if(div.offsetLeft&gt;=500)&#123; //停止定时器 clearInterval(time); &#125;*/ div.style.left=div.offsetLeft+(500-div.offsetLeft)/30+&quot;px&quot;; &#125;,30);//第二个参数为毫秒数 &#125; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;input type=&quot;button&quot; value=&quot;执行&quot; onclick=&quot;run()&quot;&gt; &lt;div id=&quot;main&quot;&gt;&lt;/div&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JS获取某个元素节点]]></title>
+    <url>%2FshiqiRose.github.io%2F2018%2F04%2F29%2F1.8%20JS%E8%8E%B7%E5%8F%96%E6%9F%90%E4%B8%AA%E5%85%83%E7%B4%A0%E8%8A%82%E7%82%B9%2F</url>
+    <content type="text"><![CDATA[JS获取某个元素节点 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;title&gt;JS中获取某个元素节点&lt;/title&gt; &lt;style type=&quot;text/css&quot;&gt; ul&#123;list-style:none;&#125; ul li&#123;width:100px;height:100px; border:solid 1px blue;&#125; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;ul id=&quot;top_ul&quot;&gt; &lt;li&gt;A&lt;/li&gt; &lt;li&gt;B&lt;/li&gt; &lt;li&gt;C&lt;/li&gt; &lt;li&gt;D&lt;/li&gt; &lt;/ul&gt; &lt;ul id=&quot;bottom_ul&quot;&gt; &lt;li&gt;A&lt;/li&gt; &lt;li&gt;B&lt;/li&gt; &lt;li&gt;C&lt;/li&gt; &lt;li&gt;D&lt;/li&gt; &lt;/ul&gt; &lt;script type=&quot;text/javascript&quot;&gt; var ul_0=document.getElementById(&quot;top_ul&quot;); // getChildren(ul_0)[0].style.backgroundColor=&quot;red&quot;; getFirstChild(ul_0).style.backgroundColor=&quot;red&quot;; getLastChild(ul_0).style.backgroundColor=&quot;red&quot;; getPrevNode(getLastChild(ul_0)).style.backgroundColor=&quot;blue&quot;; getNextNode(getFirstChild(ul_0)).style.backgroundColor=&quot;green&quot;; var ul_1=document.getElementById(&quot;bottom_ul&quot;); getIndexChildNode(ul_1,2).style.backgroundColor=&quot;red&quot;; var res=getBrothNodes(getIndexChildNode(ul_1,2)); for(var i=0;i&lt;res.length;i++)&#123; res[i].style.backgroundColor=&quot;green&quot;; &#125; //(1)获取某个元素所有子元素 function getChildren(ele)&#123; if(ele)&#123; return ele.children; &#125; &#125; //(2)获取某个元素里面第一个子节点 function getFirstChild(ele)&#123; if(ele)&#123; return ele.firstElementChild || ele.firstChild; &#125; &#125; //(3)获取某个元素里面最后一个子节点 function getLastChild(ele)&#123; if(ele)&#123; return ele.lastElementChild || ele.lastChild; &#125; &#125; //(4)获取某个元素前面的兄弟节点 function getPrevNode(ele)&#123; if(ele)&#123; return ele.previousElementSibling || ele.previousSibling; &#125; &#125; //(5)获取某个元素后面的兄弟节点 function getNextNode(ele)&#123; if(ele)&#123; return ele.nextElementSibling || ele.nextSibling &#125; &#125; //(6)获取某个元素中任意一个下标子节点 function getIndexChildNode(ele,index)&#123; if(ele)&#123; return ele.children[index]; &#125; &#125; //(7)获取某个元素所有兄弟节点//排除自己 function getBrothNodes(ele)&#123; var items=new Array(); var j=0; if(ele)&#123; var children= ele.parentNode.children; for(var i=0;i&lt;children.length;i++)&#123; if(ele!=children[i])&#123; items[j]=children[i]; j++; &#125; &#125; return items; &#125; &#125; &lt;/script&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JS实现页面一级菜单和二级菜单]]></title>
+    <url>%2FshiqiRose.github.io%2F2018%2F04%2F29%2F1.4%20JS%E5%AE%9E%E7%8E%B0%E9%A1%B5%E9%9D%A2%E4%BE%A7%E6%A0%8F%E4%B8%80%E7%BA%A7%E8%8F%9C%E5%8D%95%E5%92%8C%E4%BA%8C%E7%BA%A7%E8%8F%9C%E5%8D%95%2F</url>
+    <content type="text"><![CDATA[JS实现页面侧栏一级菜单和二级菜单 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;title&gt;JS实现页面侧栏一级菜单和二级菜单&lt;/title&gt; &lt;style type=&quot;text/css&quot;&gt; ul&#123;margin:0px;padding:0px;list-style:none;&#125; ul li&#123;margin:0px;&#125; a&#123;text-decoration:none;&#125; #menu li&#123;width:120px;border:solid 2px #fff; &#125; #menu li a&#123;display:block;height:25px;text-align:center;padding-top:5px;&#125; .nav a&#123;background-color:#4e5e6b;color:#fff;font-weight:bold;&#125; .sec_menu&#123;display:none;&#125; .sec_menu li a&#123;background-color:#999;&#125; &lt;/style&gt; &lt;script type=&quot;text/javascript&quot;&gt; function showMenu(obj)&#123; var ul=obj.parentNode.getElementsByTagName(&quot;ul&quot;)[0];//获取一级菜单中二级菜单项ul if(ul.style.display==&quot;none&quot;||ul.style.display==&quot;&quot;)&#123;//当前二级菜单隐藏 ul.style.display=&quot;block&quot; ; &#125;else&#123; ul.style.display=&quot;none&quot; ; &#125; &#125; &lt;/script&gt; &lt;/head&gt; &lt;body &gt; &lt;ul id=&quot;menu&quot;&gt; &lt;li class=&quot;nav&quot;&gt; &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;showMenu(this)&quot;&gt;一级菜单01&lt;/a&gt; &lt;ul class=&quot;sec_menu&quot;&gt; &lt;li&gt; &lt;a href=&quot;#&quot;&gt;二级菜单01001&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=&quot;#&quot;&gt;二级菜单01002&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=&quot;#&quot;&gt;二级菜单01003&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li class=&quot;nav&quot;&gt; &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;showMenu(this)&quot;&gt;一级菜单01&lt;/a&gt; &lt;ul class=&quot;sec_menu&quot;&gt; &lt;li&gt; &lt;a href=&quot;#&quot;&gt;二级菜单01001&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=&quot;#&quot;&gt;二级菜单01002&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=&quot;#&quot;&gt;二级菜单01003&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JS数组]]></title>
+    <url>%2FshiqiRose.github.io%2F2018%2F04%2F29%2F1.3%20JS%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[JS数组 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;title&gt;JS数组&lt;/title&gt; &lt;script type=&quot;text/javascript&quot;&gt; //数组的定义 //一维数组 var items_0=new Array();//没有指定长度的数组 var items_1=new Array(3);//3个长度的数组 var items_2=new Array(&quot;dfd&quot;,&quot;aa&quot;,&quot;ss&quot;,&quot;dd&quot;);//定义数组直接赋值 var items_3=[&quot;ss&quot;,&quot;dd&quot;]; items_0[0]=&quot;sdfdf&quot;; items_0[100]=&quot;dfdf&quot;;//长度是可变的 items_2[0]=&quot;ssdf&quot;; for(var i=0;i&lt;items_3.length;i++)&#123; document.write(items_3[i]); &#125; //二维数组 var items_n=new Array(); items_n[0]=new Array(2); items_n[1]=new Array(2); items_n[2]=[&quot;dd&quot;,&quot;ss&quot;,&quot;aa&quot;]; items_n[0][0]=&quot;as&quot;; items_n[0][1]=&quot;cc&quot;; for(var i=0;i&lt;items_n.length;i++)&#123; for(var j=0;j&lt;items_n[i].length;j++)&#123; var r=items_n[i][j]; alert(r); &#125; &#125; //sort() /join(..)/push(..) /pop() var items_b=new Array();//3个长度的数组 items_b.push(&quot;a&quot;); items_b.push(&quot;c&quot;); var c=items_b.pop(); document.write(items_b+&quot;&lt;br&gt;&quot;); &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[JS字符串常用方法]]></title>
     <url>%2FshiqiRose.github.io%2F2018%2F04%2F29%2FJavaScript%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[嗯整理之前的小练习~ JavaScript中字符串常用方法&lt;!DOCTYPE html&gt; JavaScript中字符串常用方法 //字符串常用方法 var str_0=”abcdfdsf”; //(1)连接字符串 concat(“”,….) str_0=str_0+”sdfdfdaf”; var res= str_0.concat(“a”,”b”,”c”);//不定个数参数 //(2)获取长度length var l=str_0.length; //(3)大小写 toUpperCase() toLowerCase() var c=str_0.toUpperCase(); //(4)没有trim方法， substring substr var c_0=str_0.substring(0,4);//从x开始截取，到y结束，不包含y下标位置 var c_1=str_0.substr(2,4);//从x开始，截取几个长度 //(5) split(“”) 按照子字符串拆分数组 var items_0=”adf:ddd:ss:dddds”.split(“:”); for(var i=0;i&lt;items_0.length;i++){ document.write(items_0[i]+”“); } //(6) indexOf() lastIndexOf(); var index=str_0.indexOf(“d”,4); //(7)replace()只替换第一次出现的，后面学正则可以替换所有的指定字符 var str_n=str_0.replace(“a”,”AAA”); alert(str_n);//警告框]]></content>
