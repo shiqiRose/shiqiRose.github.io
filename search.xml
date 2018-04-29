@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JS字符串常用方法]]></title>
+    <url>%2FshiqiRose.github.io%2F2018%2F04%2F29%2FJavaScript%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[嗯整理之前的小练习~ JavaScript中字符串常用方法&lt;!DOCTYPE html&gt; JavaScript中字符串常用方法 //字符串常用方法 var str_0=”abcdfdsf”; //(1)连接字符串 concat(“”,….) str_0=str_0+”sdfdfdaf”; var res= str_0.concat(“a”,”b”,”c”);//不定个数参数 //(2)获取长度length var l=str_0.length; //(3)大小写 toUpperCase() toLowerCase() var c=str_0.toUpperCase(); //(4)没有trim方法， substring substr var c_0=str_0.substring(0,4);//从x开始截取，到y结束，不包含y下标位置 var c_1=str_0.substr(2,4);//从x开始，截取几个长度 //(5) split(“”) 按照子字符串拆分数组 var items_0=”adf:ddd:ss:dddds”.split(“:”); for(var i=0;i&lt;items_0.length;i++){ document.write(items_0[i]+”“); } //(6) indexOf() lastIndexOf(); var index=str_0.indexOf(“d”,4); //(7)replace()只替换第一次出现的，后面学正则可以替换所有的指定字符 var str_n=str_0.replace(“a”,”AAA”); alert(str_n);//警告框]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[JS省市联动]]></title>
     <url>%2FshiqiRose.github.io%2F2018%2F04%2F22%2Fjs%E7%9C%81%E5%B8%82%E8%81%94%E5%8A%A8%2F</url>
     <content type="text"><![CDATA[很久之前做的小练习，现在准备复习一下，顺便整理一下，做个记录 JS省市联动12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;JS 省市联动&lt;/title&gt; &lt;script type=&quot;text/javascript&quot;&gt; function init()&#123; var province=[&quot;1101|北京&quot;,&quot;1002|河北省&quot;,&quot;1003|河南省&quot;]; var provinceObj=document.getElementById(&quot;province&quot;); provinceObj.options[0]=new Option(&quot;--请选择--&quot;); for(var i=0;i&lt; province.length;i++)&#123; var items = province[i].split(&quot;|&quot;); var value=items[0]; var text=items[1]; var option=new Option(text,value); provinceObj.options[i+1] =option; &#125; &#125; function chooseProvince()&#123; var city=document.getElementById(&quot;city&quot;); city.options.length=0; city.options[0]=new Option(&quot;--请选择--&quot;); var citys=[&quot;北京&quot;,&quot;石家庄|唐山|邯郸|天津|秦皇岛|廊坊&quot;,&quot;郑州|开封|洛阳|南阳&quot;]; var index=document.getElementById(&quot;province&quot;).selectedIndex; if(index!=0)&#123; var items=citys[index-1].split(&quot;|&quot;); for(var i=0;i&lt;items.length;i++)&#123; var option=new Option(items[i]); city.options[i+1]=option; &#125; &#125;else&#123;&#125; &#125; &lt;/script&gt;&lt;/head&gt;&lt;body onload=&quot;init()&quot;&gt; &lt;select id=&quot;province&quot; onchange=&quot;chooseProvince()&quot;&gt; &lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt; &lt;/select&gt; &lt;select id=&quot;city&quot;&gt; &lt;option value=&quot;&quot;&gt;--请选择--&lt;/option&gt; &lt;/select&gt;&lt;/body&gt;&lt;/html&gt; 如下图所示]]></content>

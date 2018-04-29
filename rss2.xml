@@ -8,8 +8,30 @@
     <atom:link href="/shiqiRose.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>这似乎有点奇怪,并不知道说什么,大概就是填坑日记吧~</description>
-    <pubDate>Sun, 22 Apr 2018 13:45:34 GMT</pubDate>
+    <pubDate>Sun, 29 Apr 2018 07:19:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>JS字符串常用方法</title>
+      <link>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/JavaScript%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <guid>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/JavaScript%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <pubDate>Sun, 29 Apr 2018 07:20:28 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;嗯整理之前的小练习~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;JavaScript中字符串常用方法&quot;&gt;&lt;a href=&quot;#JavaScript中字符串常用方法&quot; class=&quot;headerlink&quot; title=&quot;JavaScript中
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<blockquote><p>嗯整理之前的小练习~</p></blockquote><h4 id="JavaScript中字符串常用方法"><a href="#JavaScript中字符串常用方法" class="headerlink" title="JavaScript中字符串常用方法"></a>JavaScript中字符串常用方法</h4><p>&lt;!DOCTYPE html&gt;</p><html><br>  <head><br>    <title>JavaScript中字符串常用方法</title><br>    <script type="text/javascript"><br><br>   //字符串常用方法<br>   var str_0=”abcdfdsf”;<br>   //(1)连接字符串 concat(“”,….)<br>   str_0=str_0+”sdfdfdaf”;<br>   var res= str_0.concat(“a”,”b”,”c”);//不定个数参数<br>   //(2)获取长度length<br>   var l=str_0.length;<br>   //(3)大小写  toUpperCase()  toLowerCase()<br>   var c=str_0.toUpperCase();<br>   //(4)没有trim方法， substring  substr<br>   var c_0=str_0.substring(0,4);//从x开始截取，到y结束，不包含y下标位置<br>   var c_1=str_0.substr(2,4);//从x开始，截取几个长度<br>   //(5) split(“”) 按照子字符串拆分数组<br>   var items_0=”adf:ddd:ss:dddds”.split(“:”);<br>   for(var i=0;i&lt;items_0.length;i++){<br>      document.write(items_0[i]+”<br>“);<br>   }<br>    //(6) indexOf()  lastIndexOf();<br>    var index=str_0.indexOf(“d”,4);<br>    //(7)replace()只替换第一次出现的，后面学正则可以替换所有的指定字符<br>    var str_n=str_0.replace(“a”,”AAA”);<br>    alert(str_n);//警告框<br>    </script><br><br>  </head><br>  <body><br><br>  </body><br></html>]]></content:encoded>
+      
+      <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/JavaScript%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>JS省市联动</title>
@@ -90,29 +112,6 @@
       <content:encoded><![CDATA[<p><strong>nginx</strong> 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx -V  #查看nginx安装模块</span><br><span class="line">cd  /usr/local/nginx-1.12.2</span><br><span class="line">./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module </span><br><span class="line">make</span><br><span class="line">mv /usr/local/nginx/sbin/nginx /usr/local/nginx/sbin/nginx.old</span><br><span class="line">cp objs/nginx /usr/local/nginx/sbin/nginx</span><br><span class="line">make upgrade       //替换老的nginx进程</span><br><span class="line">再次执行：</span><br><span class="line">/usr/local/nginx/sbin/nginx -V 将会显示新的nginx的版本及编译的参数。</span><br></pre></td></tr></table></figure><h3 id="nginx设置开机自启动"><a href="#nginx设置开机自启动" class="headerlink" title="nginx设置开机自启动"></a>nginx设置开机自启动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">如果你采用编译安装的方式，直接在/etc/rc.local 增加如下代码即可：</span><br><span class="line">/usr/local/nginx/sbin/nginx </span><br><span class="line">前提是你的nginx是安装到/usr/local/nginx 下</span><br><span class="line"></span><br><span class="line">另外，如果使用yum 安装的话，默认是作为服务器，开机自动启动的。可以用chkconfig 查看</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/16/nginx%E6%B7%BB%E5%8A%A0ssl/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>win快捷键进cmd</title>
-      <link>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/10/win%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd/</link>
-      <guid>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/10/win%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd/</guid>
-      <pubDate>Tue, 10 Apr 2018 14:47:48 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;前言&lt;br&gt;是不是用惯了命令行觉得来回找太麻烦！？&lt;br&gt;来来来get新技能（吐槽一下这个命令太长我记不住的）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;第一步&lt;/strong&gt; ：开始→所有程序→附件→命令提示符→右键
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<blockquote><p>前言<br>是不是用惯了命令行觉得来回找太麻烦！？<br>来来来get新技能（吐槽一下这个命令太长我记不住的）</p></blockquote><ul><li><strong>第一步</strong> ：开始→所有程序→附件→命令提示符→右键选择以管理员运行(或者执行身份)→OK</li><li><strong>第二步</strong> ：在win+R(也就是运行)中输入： runas /user:administrator Cmd 然后回车，会提示你输入密码，输入后即可以管理员身份启动CMD</li><li><strong>PS</strong> ：也可以直接打开CMD输入  runas /user:administrator Cmd  然后回车<br>此法有2个前提：<br>1.administrator需要设置密码<br>2.secondLogon…服务需开启</li></ul>]]></content:encoded>
-      
-      <comments>https://github.com/shiqiRose/shiqiRose.github.io/2018/04/10/win%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%BF%9Bcmd/#disqus_thread</comments>
     </item>
     
   </channel>
