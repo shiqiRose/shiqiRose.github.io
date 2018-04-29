@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="nginx 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。 123456789/usr/local/nginx/sbin/nginx -V  #查看nginx安装模块cd  /usr/local/nginx-1.12.2./configure --prefix=/usr/local/nginx --with-http_st">
+<meta name="description" content="nginx 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。">
 <meta name="keywords" content="Nginx,SSL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="nginx添加ssl">
 <meta property="og:url" content="https://github.com/shiqiRose/shiqiRose.github.io/2018/04/16/nginx添加ssl/index.html">
 <meta property="og:site_name" content="十七日食记">
-<meta property="og:description" content="nginx 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。 123456789/usr/local/nginx/sbin/nginx -V  #查看nginx安装模块cd  /usr/local/nginx-1.12.2./configure --prefix=/usr/local/nginx --with-http_st">
+<meta property="og:description" content="nginx 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-21T09:49:01.154Z">
+<meta property="og:updated_time" content="2018-04-29T11:27:06.069Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nginx添加ssl">
-<meta name="twitter:description" content="nginx 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。 123456789/usr/local/nginx/sbin/nginx -V  #查看nginx安装模块cd  /usr/local/nginx-1.12.2./configure --prefix=/usr/local/nginx --with-http_st">
+<meta name="twitter:description" content="nginx 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。">
 
 
 
@@ -344,8 +344,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-21T17:49:01+08:00">
-                2018-04-21
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-29T19:27:06+08:00">
+                2018-04-29
               </time>
             
           </span>
@@ -405,8 +405,7 @@
       
 
       
-        <p><strong>nginx</strong> 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx -V  #查看nginx安装模块</span><br><span class="line">cd  /usr/local/nginx-1.12.2</span><br><span class="line">./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module </span><br><span class="line">make</span><br><span class="line">mv /usr/local/nginx/sbin/nginx /usr/local/nginx/sbin/nginx.old</span><br><span class="line">cp objs/nginx /usr/local/nginx/sbin/nginx</span><br><span class="line">make upgrade       //替换老的nginx进程</span><br><span class="line">再次执行：</span><br><span class="line">/usr/local/nginx/sbin/nginx -V 将会显示新的nginx的版本及编译的参数。</span><br></pre></td></tr></table></figure>
+        <p><strong>nginx</strong> 每次安装一个新的模块都需要重新编译一次，编译完成之后将nginx这一个文件拷贝到sbin下面即可，踩了好几次，来分享一下。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx -V  #查看nginx安装模块</span><br><span class="line">cd  /usr/local/nginx-1.12.2</span><br><span class="line">./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module </span><br><span class="line">make</span><br><span class="line">mv /usr/local/nginx/sbin/nginx /usr/local/nginx/sbin/nginx.old</span><br><span class="line">cp objs/nginx /usr/local/nginx/sbin/nginx</span><br><span class="line">make upgrade       //替换老的nginx进程</span><br><span class="line">再次执行：</span><br><span class="line">/usr/local/nginx/sbin/nginx -V 将会显示新的nginx的版本及编译的参数。</span><br></pre></td></tr></table></figure></p>
 <h3 id="nginx设置开机自启动"><a href="#nginx设置开机自启动" class="headerlink" title="nginx设置开机自启动"></a>nginx设置开机自启动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">如果你采用编译安装的方式，直接在/etc/rc.local 增加如下代码即可：</span><br><span class="line">/usr/local/nginx/sbin/nginx </span><br><span class="line">前提是你的nginx是安装到/usr/local/nginx 下</span><br><span class="line"></span><br><span class="line">另外，如果使用yum 安装的话，默认是作为服务器，开机自动启动的。可以用chkconfig 查看</span><br></pre></td></tr></table></figure>
 
       

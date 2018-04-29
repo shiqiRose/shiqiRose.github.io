@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="JS定时器的设置  1234567891011121314151617181920212223242526272829303132333435&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;  &amp;lt;head&amp;gt; 	&amp;lt;title&amp;gt;JS定时器设置&amp;lt;/title&amp;gt;		 &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;">
+<meta name="description" content="JS定时器的设置">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS定时器的设置">
 <meta property="og:url" content="https://github.com/shiqiRose/shiqiRose.github.io/2018/04/29/1.9 JS定时器的设置/index.html">
 <meta property="og:site_name" content="十七日食记">
-<meta property="og:description" content="JS定时器的设置  1234567891011121314151617181920212223242526272829303132333435&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;  &amp;lt;head&amp;gt; 	&amp;lt;title&amp;gt;JS定时器设置&amp;lt;/title&amp;gt;		 &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;">
+<meta property="og:description" content="JS定时器的设置">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-29T08:34:10.218Z">
+<meta property="og:updated_time" content="2018-04-29T11:27:05.976Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS定时器的设置">
-<meta name="twitter:description" content="JS定时器的设置  1234567891011121314151617181920212223242526272829303132333435&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;  &amp;lt;head&amp;gt; 	&amp;lt;title&amp;gt;JS定时器设置&amp;lt;/title&amp;gt;		 &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;">
+<meta name="twitter:description" content="JS定时器的设置">
 
 
 
@@ -344,7 +344,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-29T16:34:10+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-29T19:27:05+08:00">
                 2018-04-29
               </time>
             
@@ -406,9 +406,8 @@
 
       
         <blockquote>
-<p>JS定时器的设置</p>
+<p>JS定时器的设置<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt; </span><br><span class="line">	&lt;title&gt;JS定时器设置&lt;/title&gt;	</span><br><span class="line">	 &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	   </span><br><span class="line">		div&#123;width:100px;height:100px;background-color:red;position:relative; &#125;</span><br><span class="line">	 &lt;/style&gt;</span><br><span class="line">	  &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	     var time;</span><br><span class="line">         function run()&#123;</span><br><span class="line">		   var div=document.getElementById(&quot;main&quot;);</span><br><span class="line">		   //使用定时器</span><br><span class="line">		   time= setInterval(function()&#123;</span><br><span class="line">		     /*</span><br><span class="line">			 div.style.left=div.offsetLeft+10+&quot;px&quot;;</span><br><span class="line">			 if(div.offsetLeft&gt;=500)&#123;</span><br><span class="line">			   //停止定时器</span><br><span class="line">			   clearInterval(time);</span><br><span class="line">			 &#125;*/</span><br><span class="line">			 div.style.left=div.offsetLeft+(500-div.offsetLeft)/30+&quot;px&quot;;</span><br><span class="line">			 </span><br><span class="line">		   &#125;,30);//第二个参数为毫秒数</span><br><span class="line">		   </span><br><span class="line">		 &#125;</span><br><span class="line">		</span><br><span class="line">	  &lt;/script&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">   &lt;body&gt;</span><br><span class="line">        &lt;input type=&quot;button&quot; value=&quot;执行&quot; onclick=&quot;run()&quot;&gt;</span><br><span class="line">	    &lt;div id=&quot;main&quot;&gt;&lt;/div&gt;</span><br><span class="line">	 </span><br><span class="line">      </span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt; </span><br><span class="line">	&lt;title&gt;JS定时器设置&lt;/title&gt;	</span><br><span class="line">	 &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	   </span><br><span class="line">		div&#123;width:100px;height:100px;background-color:red;position:relative; &#125;</span><br><span class="line">	 &lt;/style&gt;</span><br><span class="line">	  &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	     var time;</span><br><span class="line">         function run()&#123;</span><br><span class="line">		   var div=document.getElementById(&quot;main&quot;);</span><br><span class="line">		   //使用定时器</span><br><span class="line">		   time= setInterval(function()&#123;</span><br><span class="line">		     /*</span><br><span class="line">			 div.style.left=div.offsetLeft+10+&quot;px&quot;;</span><br><span class="line">			 if(div.offsetLeft&gt;=500)&#123;</span><br><span class="line">			   //停止定时器</span><br><span class="line">			   clearInterval(time);</span><br><span class="line">			 &#125;*/</span><br><span class="line">			 div.style.left=div.offsetLeft+(500-div.offsetLeft)/30+&quot;px&quot;;</span><br><span class="line">			 </span><br><span class="line">		   &#125;,30);//第二个参数为毫秒数</span><br><span class="line">		   </span><br><span class="line">		 &#125;</span><br><span class="line">		</span><br><span class="line">	  &lt;/script&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">   &lt;body&gt;</span><br><span class="line">        &lt;input type=&quot;button&quot; value=&quot;执行&quot; onclick=&quot;run()&quot;&gt;</span><br><span class="line">	    &lt;div id=&quot;main&quot;&gt;&lt;/div&gt;</span><br><span class="line">	 </span><br><span class="line">      </span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -486,8 +485,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/shiqiRose.github.io/2018/04/29/1.7 JS表单验证以及添加信息/" rel="next" title="JS添加表单验证以及添加信息">
-                <i class="fa fa-chevron-left"></i> JS添加表单验证以及添加信息
+              <a href="/shiqiRose.github.io/2018/04/29/1.8 JS获取某个元素节点/" rel="next" title="JS获取某个元素节点">
+                <i class="fa fa-chevron-left"></i> JS获取某个元素节点
               </a>
             
           </div>
@@ -495,10 +494,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/shiqiRose.github.io/2018/04/29/1.8 JS获取某个元素节点/" rel="prev" title="JS获取某个元素节点">
-                JS获取某个元素节点 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
