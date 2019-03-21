@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="十七日食记">
 <meta property="og:description" content="JavaScript中字符串常用方法，字符串的截取、长度获取、转换大小写、以及其他方法等">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-29T13:57:35.371Z">
+<meta property="og:updated_time" content="2019-03-21T13:08:44.303Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS字符串常用方法">
 <meta name="twitter:description" content="JavaScript中字符串常用方法，字符串的截取、长度获取、转换大小写、以及其他方法等">
@@ -344,8 +344,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-29T21:57:35+08:00">
-                2018-04-29
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-21T21:08:44+08:00">
+                2019-03-21
               </time>
             
           </span>
@@ -409,8 +409,7 @@
 <p>JavaScript中字符串常用方法，字符串的截取、长度获取、转换大小写、以及其他方法等</p>
 </blockquote>
 <a id="more"></a>
-<h4 id="JavaScript中字符串常用方法"><a href="#JavaScript中字符串常用方法" class="headerlink" title="JavaScript中字符串常用方法"></a>JavaScript中字符串常用方法</h4><p>&lt;!DOCTYPE html&gt;</p>
-<html><br>  <head><br>    <title>JavaScript中字符串常用方法</title><br>    <script type="text/javascript"><br><br>   //字符串常用方法<br>   var str_0=”abcdfdsf”;<br>   //(1)连接字符串 concat(“”,….)<br>   str_0=str_0+”sdfdfdaf”;<br>   var res= str_0.concat(“a”,”b”,”c”);//不定个数参数<br>   //(2)获取长度length<br>   var l=str_0.length;<br>   //(3)大小写  toUpperCase()  toLowerCase()<br>   var c=str_0.toUpperCase();<br>   //(4)没有trim方法， substring  substr<br>   var c_0=str_0.substring(0,4);//从x开始截取，到y结束，不包含y下标位置<br>   var c_1=str_0.substr(2,4);//从x开始，截取几个长度<br>   //(5) split(“”) 按照子字符串拆分数组<br>   var items_0=”adf:ddd:ss:dddds”.split(“:”);<br>   for(var i=0;i&lt;items_0.length;i++){<br>      document.write(items_0[i]+”<br>“);<br>   }<br>    //(6) indexOf()  lastIndexOf();<br>    var index=str_0.indexOf(“d”,4);<br>    //(7)replace()只替换第一次出现的，后面学正则可以替换所有的指定字符<br>    var str_n=str_0.replace(“a”,”AAA”);<br>    alert(str_n);//警告框<br>    </script><br><br>  </head><br>  <body><br><br>  </body><br></html>
+<h4 id="JavaScript中字符串常用方法"><a href="#JavaScript中字符串常用方法" class="headerlink" title="JavaScript中字符串常用方法"></a>JavaScript中字符串常用方法</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt; </span><br><span class="line">	&lt;title&gt;JavaScript中字符串常用方法&lt;<span class="regexp">/title&gt;	</span></span><br><span class="line"><span class="regexp">	&lt;script type="text/</span>javascript<span class="string">"&gt;</span></span><br><span class="line"><span class="string">	</span></span><br><span class="line"><span class="string">   //字符串常用方法</span></span><br><span class="line"><span class="string">   var str_0="</span>abcdfdsf<span class="string">";</span></span><br><span class="line"><span class="string">   //(1)连接字符串 concat("</span><span class="string">",....)</span></span><br><span class="line"><span class="string">   str_0=str_0+"</span>sdfdfdaf<span class="string">";</span></span><br><span class="line"><span class="string">   var res= str_0.concat("</span>a<span class="string">","</span>b<span class="string">","</span>c<span class="string">");//不定个数参数</span></span><br><span class="line"><span class="string">   //(2)获取长度length</span></span><br><span class="line"><span class="string">   var l=str_0.length;</span></span><br><span class="line"><span class="string">   //(3)大小写  toUpperCase()  toLowerCase()</span></span><br><span class="line"><span class="string">   var c=str_0.toUpperCase();</span></span><br><span class="line"><span class="string">   //(4)没有trim方法， substring  substr</span></span><br><span class="line"><span class="string">   var c_0=str_0.substring(0,4);//从x开始截取，到y结束，不包含y下标位置</span></span><br><span class="line"><span class="string">   var c_1=str_0.substr(2,4);//从x开始，截取几个长度</span></span><br><span class="line"><span class="string">   //(5) split("</span><span class="string">") 按照子字符串拆分数组</span></span><br><span class="line"><span class="string">   var items_0="</span>adf:ddd:ss:dddds<span class="string">".split("</span>:<span class="string">");</span></span><br><span class="line"><span class="string">   for(var i=0;i&lt;items_0.length;i++)&#123;</span></span><br><span class="line"><span class="string">	  document.write(items_0[i]+"</span>&lt;br&gt;<span class="string">");</span></span><br><span class="line"><span class="string">   &#125;</span></span><br><span class="line"><span class="string">	//(6) indexOf()  lastIndexOf();</span></span><br><span class="line"><span class="string">	var index=str_0.indexOf("</span>d<span class="string">",4);</span></span><br><span class="line"><span class="string">    //(7)replace()只替换第一次出现的，后面学正则可以替换所有的指定字符</span></span><br><span class="line"><span class="string">    var str_n=str_0.replace("</span>a<span class="string">","</span>AAA<span class="string">");	</span></span><br><span class="line"><span class="string">    alert(str_n);//警告框</span></span><br><span class="line"><span class="string">	&lt;/script&gt;</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">  &lt;/head&gt;</span></span><br><span class="line"><span class="string">  &lt;body&gt;</span></span><br><span class="line"><span class="string">      </span></span><br><span class="line"><span class="string">  &lt;/body&gt;</span></span><br><span class="line"><span class="string">&lt;/html&gt;</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -573,7 +572,7 @@
                 alt="是"十七"呀" />
             
               <p class="site-author-name" itemprop="name">是"十七"呀</p>
-              <p class="site-description motion-element" itemprop="description">这似乎有点奇怪,并不知道说什么,大概就是填坑日记吧~</p>
+              <p class="site-description motion-element" itemprop="description">前路浩荡  万事可期~</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -738,7 +737,7 @@
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -752,7 +751,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">6.0k</span>
+    <span title="Site words total count">6.3k</span>
   
 </div>
 
